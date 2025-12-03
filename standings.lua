@@ -218,7 +218,7 @@ function sepgp_standings:OnEnable()
   if not T:IsRegistered("sepgp_standings") then
     T:Register("sepgp_standings",
       "children", function()
-        T:SetTitle(L["Beluga Standings"])
+        T:SetTitle(L["Log Breaking Machine Standings"])
         self:OnTooltipUpdate()
       end,
   		"showTitleWhenDetached", true,
