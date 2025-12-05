@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: |cff9664c8BRP
-## Notes: Beluga Raid Points
+## Notes: Breaking Raid Points
 ## Author: Roadblock, Humanoid
 ## X-Website: https://github.com/Road-block/shootyepgp/releases/latest
 ## X-Category: Guild
