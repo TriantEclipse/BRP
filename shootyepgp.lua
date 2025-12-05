@@ -516,7 +516,7 @@ function sepgp:delayedInit()
   end
   -- init options and comms
   self._options = self:buildMenu()
-  self:RegisterChatCommand({"/brp","/belugaraidpoints"},self.cmdtable())
+  self:RegisterChatCommand({"/brp","/breakingraidpoints"},self.cmdtable())
   self:RegisterEvent("CHAT_MSG_ADDON","addonComms")  
   -- broadcast our version
   self:addonMessage(addonMsg,"GUILD")
@@ -726,14 +726,14 @@ function sepgp:bidPrint(link,masterlooter,need,greed,bid)
 end
 
 function sepgp:simpleSay(msg)
-  SendChatMessage(string.format("Beluga Raid Points: %s",msg), sepgp_saychannel)
+  SendChatMessage(string.format("Breaking Raid Points: %s",msg), sepgp_saychannel)
 end
 
 function sepgp:adminSay(msg)
   -- API is broken on Elysium
   -- local g_listen, g_speak, officer_listen, officer_speak, g_promote, g_demote, g_invite, g_remove, set_gmotd, set_publicnote, view_officernote, edit_officernote, set_guildinfo = GuildControlGetRankFlags() 
   -- if (officer_speak) then
-  SendChatMessage(string.format("Beluga Raid Points: %s",msg), sepgp_saychannel)
+  SendChatMessage(string.format("Breaking Raid Points: %s",msg), sepgp_saychannel)
   -- end
 end
 
@@ -1237,7 +1237,7 @@ end
 -- Menu
 ---------
 sepgp.hasIcon = "Interface\\LootFrame\\FishingLoot-Icon"
-sepgp.title = "Beluga Raid Points"
+sepgp.title = "Breaking Raid Points"
 sepgp.defaultMinimapPosition = 180
 sepgp.defaultPosition = "RIGHT"
 sepgp.cannotDetachTooltip = true
